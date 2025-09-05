@@ -1,0 +1,16 @@
+=== MESSAGES FROM GROUP: TEST GROUP ===
+Total Messages: 1
+Group Link: https://t.me/testgroup
+Generated: 2025-09-02 12:15:47
+============================================================
+
+[1] Message ID: 1
+    Telegram ID: test_msg_123
+    Sender: Test User
+    Timestamp: 2024-01-01T00:00:00
+    Is Job Post: 1
+    Job Score: 0.0
+    Message Text:
+Test job posting for Python developer
+--------------------------------------------------
+
