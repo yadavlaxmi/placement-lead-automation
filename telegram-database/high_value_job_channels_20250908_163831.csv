@@ -1,0 +1,25 @@
+group_id,group_name,group_link,job_messages,total_messages,job_percentage,joined_by_account,analysis_timestamp
+Account 1_group_3,Cloud Computing India,https://t.me/cloudcomputingindia,16,100,16.0,Account 1,2025-09-08T16:38:31.173078
+Account 1_group_6,GCP Jobs India,https://t.me/gcpjobsindia,15,100,15.0,Account 1,2025-09-08T16:38:31.173147
+Account 1_group_7,Docker Jobs India,https://t.me/dockerjobsindia,10,100,10.0,Account 1,2025-09-08T16:38:31.173185
+Account 1_group_8,Kubernetes Jobs India,https://t.me/kubernetesjobsindia,16,100,16.0,Account 1,2025-09-08T16:38:31.173219
+Account 2_group_1,React Native India,https://t.me/reactnativeindia,14,100,14.0,Account 2,2025-09-08T16:38:31.173251
+Account 2_group_2,Blockchain India,https://t.me/blockchainindia,16,100,16.0,Account 2,2025-09-08T16:38:31.173282
+Account 2_group_3,Cybersecurity India,https://t.me/cybersecurityindia,18,100,18.0,Account 2,2025-09-08T16:38:31.173313
+Account 2_group_4,Machine Learning India,https://t.me/machinelearningindia,12,100,12.0,Account 2,2025-09-08T16:38:31.173345
+Account 2_group_5,Deep Learning India,https://t.me/deeplearningindia,18,100,18.0,Account 2,2025-09-08T16:38:31.173376
+Account 2_group_7,NLP India,https://t.me/nlpindia,12,100,12.0,Account 2,2025-09-08T16:38:31.173407
+Account 2_group_9,Big Data India,https://t.me/bigdataindia,16,100,16.0,Account 2,2025-09-08T16:38:31.173437
+Account 2_group_10,Cloud Computing India,https://t.me/cloudcomputingindia,17,100,17.0,Account 2,2025-09-08T16:38:31.173468
+Account 3_group_1,Data Engineering India,https://t.me/dataengineeringindia,16,100,16.0,Account 3,2025-09-08T16:38:31.173500
+Account 3_group_2,Big Data India,https://t.me/bigdataindia,14,100,14.0,Account 3,2025-09-08T16:38:31.173531
+Account 3_group_3,Cloud Computing India,https://t.me/cloudcomputingindia,13,100,13.0,Account 3,2025-09-08T16:38:31.173560
+Account 3_group_4,AWS Jobs India,https://t.me/awsjobsindia,12,100,12.0,Account 3,2025-09-08T16:38:31.173591
+Account 3_group_5,Azure Jobs India,https://t.me/azurejobsindia,15,100,15.0,Account 3,2025-09-08T16:38:31.173621
+Account 3_group_6,GCP Jobs India,https://t.me/gcpjobsindia,16,100,16.0,Account 3,2025-09-08T16:38:31.173651
+Account 3_group_7,Docker Jobs India,https://t.me/dockerjobsindia,16,100,16.0,Account 3,2025-09-08T16:38:31.173681
+Account 3_group_8,Kubernetes Jobs India,https://t.me/kubernetesjobsindia,18,100,18.0,Account 3,2025-09-08T16:38:31.173712
+Account 4_group_1,Big Data India,https://t.me/bigdataindia,12,100,12.0,Account 4,2025-09-08T16:38:31.173743
+Account 4_group_3,AWS Jobs India,https://t.me/awsjobsindia,13,100,13.0,Account 4,2025-09-08T16:38:31.173772
+Account 4_group_5,GCP Jobs India,https://t.me/gcpjobsindia,17,100,17.0,Account 4,2025-09-08T16:38:31.173801
+Account 4_group_6,Docker Jobs India,https://t.me/dockerjobsindia,15,100,15.0,Account 4,2025-09-08T16:38:31.173839

@@ -113,5 +113,5 @@ CREATE INDEX IF NOT EXISTS idx_programming_groups_account ON programming_groups(
 CREATE INDEX IF NOT EXISTS idx_messages_group ON messages(group_id);
 CREATE INDEX IF NOT EXISTS idx_messages_account ON messages(fetched_by_account);
 CREATE INDEX IF NOT EXISTS idx_job_scores_message ON job_scores(message_id);
-CREATE INDEX IF NOT EXISTS idx_crawler_status_group ON crawler_status(group_id);
+CREATE INDEX IF NOT EXISTS idx_crawler_status_group ON crawler_status(group_id); 
 CREATE INDEX IF NOT EXISTS idx_account_group_assignments ON account_group_assignments(account_name, assignment_date); 

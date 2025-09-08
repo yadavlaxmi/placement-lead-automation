@@ -264,12 +264,12 @@ class DatabaseManager:
                     LIMIT ?
                 """, (group_id, account_name, limit))
             else:
-                cursor.execute("""
-                    SELECT * FROM messages 
-                    WHERE group_id = ? 
-                    ORDER BY timestamp DESC 
-                    LIMIT ?
-                """, (group_id, limit))
+            cursor.execute("""
+                SELECT * FROM messages 
+                WHERE group_id = ? 
+                ORDER BY timestamp DESC 
+                LIMIT ?
+            """, (group_id, limit))
             
             columns = [description[0] for description in cursor.description]
             return [dict(zip(columns, row)) for row in cursor.fetchall()]
@@ -339,3 +339,69 @@ class DatabaseManager:
             """, (account_name, limit))
             columns = [description[0] for description in cursor.description]
             return [dict(zip(columns, row)) for row in cursor.fetchall()] 
+    def insert_message(self, message_data: Dict[str, Any]) -> int:
+        """Insert a new message into the database"""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT OR IGNORE INTO messages 
+                (group_id, message_id, sender_id, sender_name, message_text, 
+                 timestamp, is_job_post, job_score, fetched_by_account)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                message_data.get('group_id'),
+                message_data.get('message_id'),
+                message_data.get('sender_id'),
+                message_data.get('sender_name'),
+                message_data.get('message_text'),
+                message_data.get('timestamp'),
+                message_data.get('is_job_post', False),
+                message_data.get('job_score', 0.0),
+                message_data.get('fetched_by_account')
+            ))
+            conn.commit()
+            return cursor.lastrowid
+
+    def get_account_group_summary(self) -> Dict[str, Any]:
+        """Get summary of account-group assignments"""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT 
+                    aga.account_name,
+                    COUNT(DISTINCT aga.group_id) as total_groups,
+                    COUNT(DISTINCT aga.assignment_date) as active_days,
+                    MAX(aga.assignment_date) as last_assignment
+                FROM account_group_assignments aga
+                GROUP BY aga.account_name
+                ORDER BY total_groups DESC
+            """)
+            
+            summary = []
+            for row in cursor.fetchall():
+                summary.append({
+                    'account_name': row[0],
+                    'total_groups': row[1],
+                    'active_days': row[2],
+                    'last_assignment': row[3]
+                })
+            
+            return {'summary': summary}
+
+    def get_groups_joined_today(self, date: str) -> List[Dict[str, Any]]:
+        """Get groups joined today by any account"""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT DISTINCT group_id 
+                FROM account_group_assignments 
+                WHERE assignment_date = ?
+            """, (date,))
+            
+            return [{'group_id': row[0]} for row in cursor.fetchall()]
+
+    def get_all_groups(self) -> List[Dict[str, Any]]:
+        """Get all available groups from universal group manager"""
+        # This would typically come from universal_group_manager
+        # For now, return empty list - will be populated by the group manager
+        return []

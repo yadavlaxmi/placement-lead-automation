@@ -1,0 +1,24 @@
+group_id,group_name,group_link,job_messages,total_messages,job_percentage,joined_by_account,analysis_timestamp
+Account 1_group_1,Flutter India,https://t.me/flutterindia,17,100,17.0,Account 1,2025-09-08T16:27:15.043765
+Account 1_group_3,Blockchain India,https://t.me/blockchainindia,11,100,11.0,Account 1,2025-09-08T16:27:15.043923
+Account 1_group_4,Cybersecurity India,https://t.me/cybersecurityindia,18,100,18.0,Account 1,2025-09-08T16:27:15.044080
+Account 1_group_5,Machine Learning India,https://t.me/machinelearningindia,11,100,11.0,Account 1,2025-09-08T16:27:15.044157
+Account 1_group_6,Deep Learning India,https://t.me/deeplearningindia,10,100,10.0,Account 1,2025-09-08T16:27:15.044227
+Account 1_group_7,Computer Vision India,https://t.me/computervisionindia,12,100,12.0,Account 1,2025-09-08T16:27:15.044299
+Account 1_group_8,NLP India,https://t.me/nlpindia,12,100,12.0,Account 1,2025-09-08T16:27:15.044373
+Account 1_group_9,Data Engineering India,https://t.me/dataengineeringindia,11,100,11.0,Account 1,2025-09-08T16:27:15.044442
+Account 1_group_10,Big Data India,https://t.me/bigdataindia,18,100,18.0,Account 1,2025-09-08T16:27:15.044516
+Account 2_group_1,Data Engineering India,https://t.me/dataengineeringindia,19,100,19.0,Account 2,2025-09-08T16:27:15.044588
+Account 2_group_5,Azure Jobs India,https://t.me/azurejobsindia,17,100,17.0,Account 2,2025-09-08T16:27:15.044677
+Account 3_group_2,PHP Jobs India,https://t.me/phpjobsindia,17,100,17.0,Account 3,2025-09-08T16:27:15.044760
+Account 3_group_4,WordPress India,https://t.me/wordpressindia,18,100,18.0,Account 3,2025-09-08T16:27:15.044842
+Account 3_group_5,E-commerce India,https://t.me/e-commerceindia,10,100,10.0,Account 3,2025-09-08T16:27:15.044936
+Account 3_group_6,UI/UX Design India,https://t.me/ui/uxdesignindia,20,100,20.0,Account 3,2025-09-08T16:27:15.045033
+Account 3_group_8,Content Writing India,https://t.me/contentwritingindia,14,100,14.0,Account 3,2025-09-08T16:27:15.045127
+Account 3_group_10,C# Jobs India,https://t.me/c#jobsindia,19,100,19.0,Account 3,2025-09-08T16:27:15.045244
+Account 4_group_1,Digital Marketing India,https://t.me/digitalmarketingindia,15,100,15.0,Account 4,2025-09-08T16:27:15.045322
+Account 4_group_2,Content Writing India,https://t.me/contentwritingindia,20,100,20.0,Account 4,2025-09-08T16:27:15.045404
+Account 4_group_3,C++ Jobs India,https://t.me/cplusplusjobsindia,13,100,13.0,Account 4,2025-09-08T16:27:15.045480
+Account 4_group_5,Go Developers India,https://t.me/godevelopersindia,16,100,16.0,Account 4,2025-09-08T16:27:15.045558
+Account 4_group_6,Rust Jobs India,https://t.me/rustjobsindia,17,100,17.0,Account 4,2025-09-08T16:27:15.045629
+Account 4_group_10,React Native India,https://t.me/reactnativeindia,13,100,13.0,Account 4,2025-09-08T16:27:15.045696

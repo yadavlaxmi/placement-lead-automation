@@ -110,7 +110,7 @@ class TelegramJobScraper:
         # Show universal group stats
         stats = self.universal_group_manager.get_universal_stats()
         logging.info(f"📈 Universal Groups: {stats['total_groups']} total groups available")
-    
+
     def show_unique_group_assignments(self):
         """Show which account joined which unique groups"""
         logging.info("🎯 Unique Group Assignments:")
@@ -241,7 +241,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1:
         if sys.argv[1] == "test":
-            run_simple_crawler()
+        run_simple_crawler()
         elif sys.argv[1] == "report":
             run_account_report()
         else:
